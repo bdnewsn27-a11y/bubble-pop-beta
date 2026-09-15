@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Pop Magic - Beta Testing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            max-width: 460px;
+            width: 100%;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+        /* Game Logo Styling */
+        .logo-box {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px auto;
+        }
+        .game-logo {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(255, 170, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 5px;
+            background: linear-gradient(to right, #ffd166, #ff9f1c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(255, 159, 28, 0.2);
+        }
+        p.subtitle {
+            color: #d1d5db;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .step-box {
+            margin-bottom: 16px;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 16px;
+            border-radius: 15px;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .step-title {
+            font-size: 12px;
+            color: #ffd166;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .btn-group {
+            background: linear-gradient(45deg, #e63946, #d62828);
+            color: white;
+            box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+        }
+        .btn-group:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+        }
+        .btn-play {
+            background: linear-gradient(45deg, #06d6a0, #00b4d8);
+            color: white;
+            box-shadow: 0 4px 15px rgba(6, 214, 160, 0.4);
+            margin-bottom: 10px;
+        }
+        .btn-play:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+        }
+        .btn-web {
+            background: rgba(255, 255, 255, 0.05);
+            color: #e0e0e0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 13px;
+            padding: 10px;
+        }
+        .btn-web:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+        .video-container {
+            margin-top: 20px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: #000;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 220px;
+            border: none;
+            display: block;
+        }
+        .notice {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #a0aec0;
+            line-height: 1.5;
+        }
+        .notice b {
+            color: #ffd166;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Game Logo -->
+    <div class="logo-box">
+        <img src="logo.png" alt="Bubble Pop Magic Logo" class="game-logo" onerror="this.src='https://via.placeholder.com/120x120/ffaa00/ffffff?text=Bubble+Pop'">
+    </div>
+
+    <!-- Title & Subtitle -->
+    <h1>Bubble Pop Magic</h1>
+    <p class="subtitle">Join Closed Beta Testing Program</p>
+
+    <!-- STEP 1: GOOGLE GROUP -->
+    <div class="step-box">
+        <div class="step-title">Step 1: Join Tester Community (Mandatory)</div>
+        <a href="https://groups.google.com/g/mkss-dev-beta-testers" target="_blank" class="btn btn-group">
+            👥 Join Google Group
+        </a>
+    </div>
+
+    <!-- STEP 2: DOWNLOAD LINKS -->
+    <div class="step-box">
+        <div class="step-title">Step 2: Download & Play Game</div>
+        <!-- Android Direct App Link -->
+        <a href="https://play.google.com/store/apps/details?id=com.game.bubble.pop.magic.v1" target="_blank" class="btn btn-play">
+            📲 Install on Android (Play Store)
+        </a>
+        <!-- Web Browser Testing Opt-in -->
+        <a href="https://play.google.com/apps/testing/com.game.bubble.pop.magic.v1" target="_blank" class="btn btn-web">
+            🌐 Join via Web Browser
+        </a>
+    </div>
+
+    <!-- PREVIEW / VIDEO SECTION -->
+    <div class="video-container">
+        <!-- আপনার ট্রেলার বা শর্টস ভিডিওর লিঙ্ক এখানে src তে বসাবেন -->
+        <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="Bubble Pop Magic Preview" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- NOTICE -->
+    <p class="notice">
+        ⚡ <b>Important:</b> Please keep the game installed for at least <b>14 days</b> and play regularly. Thank you for supporting <b>Mkss Dev</b>!
+    </p>
+</div>
+
+</body>
+</html>
